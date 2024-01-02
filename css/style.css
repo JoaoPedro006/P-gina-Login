@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(63, 63, 180);
+}
+
+.sessao-noite {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../img/note.jpg);
+  background-size: cover;
+  background-position: 20%;
+  display: none;
+}
+
+.sessao-dia {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('../img/dia.jpg');
+  background-size: cover;
+  background-position: 20%;
+}
+
+div.formulario {
+  width: 100%;
+  height: 100%;
+}
+
+.formulario .posicao-form {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sessao-dia form {
+  position: relative;
+  left: 0%;
+  width: 50%;
+  color: black;
+}
+
+.sessao-noite form {
+  position: relative;
+  left: 0%;
+  width: 50%;
+  color: rgb(237, 233, 233);
+}
+
+form h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.sessao-dia .formulario .posicao-form form input{
+  border: 2px solid rgb(30, 29, 29);
+}
+
+.formulario .posicao-form form input {
+  display: block;
+  width: 100%;
+  min-width: 200px;
+  height: 33px;
+  background-color: rgba(240, 248, 255, 0.283);
+  background-color: none;
+  border: 2px solid wheat;
+  min-width: 200px;
+}
+
+
+.botao-posicao{
+  width: 60%;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  font-size: 28px;
+  margin-top: 110px;
+  min-width: 50%;
+}
+
+.botao button{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.botao button:hover{
+  background-color: rgb(25, 24, 24);
+  color: antiquewhite;
+}
+
+.sessao-noite .formulario .posicao-form form input[type=submit]{
+  color: antiquewhite;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formulario .posicao-form form input[type=submit]{
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15px;
+  color: rgb(18, 17, 17);
+  font-weight: bold;
+  cursor: pointer;
+}
